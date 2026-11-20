@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · IG Trial Reels Manager</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class=in><a href="./" style="text-decoration:none;color:inherit"><b>IG Trial Reels Manager</b></a>
+<nav><a href="./">Inicio</a><a href="privacy.html">Política de privacidad</a><a href="terms.html">Términos de uso</a></nav></div></header>
+<main>
+<h1>Política de privacidad</h1>
+<p class=mut>Vigente desde el 20 de noviembre de 2026.</p>
+
+<h2>1. Quién usa la aplicación</h2>
+<p>IG Trial Reels Manager es una herramienta personal de escritorio. La usa únicamente su titular, con su propia cuenta de TikTok (<b>@aleretaa</b>) y su propia cuenta de Instagram (<b>@alejoretamar_</b>). No ofrece cuentas ni servicios a terceros.</p>
+
+<h2>2. Datos de TikTok que se usan</h2>
+<p>Con la autorización que el titular otorga en la pantalla oficial de TikTok, la aplicación usa la Display API con estos permisos, solo de lectura:</p>
+<table>
+<tr><th>Permiso</th><th>Datos</th><th>Uso</th></tr>
+<tr><td><code>user.info.basic</code></td><td>Identificador de la cuenta y nombre visible</td><td>Mostrar qué cuenta se conectó. No se guardan.</td></tr>
+<tr><td><code>video.list</code></td><td>De cada video <b>público</b> propio: identificador, fecha de publicación, título, descripción, enlace, duración, dimensiones, cantidad de vistas y de me gusta, y la dirección temporal de la portada</td><td>Completar la biblioteca personal: vincular cada video con su registro, conservar la descripción y los hashtags originales y mostrar su enlace</td></tr>
+</table>
+<p>Además, la aplicación puede leer:</p>
+<ul>
+<li>El archivo de <b>exportación oficial de datos</b> que el titular descarga de su cuenta de TikTok. Solo se incorporan sus videos públicos. De las fotos y las publicaciones privadas que figuran en ese archivo se conserva únicamente la fecha, para no confundirlas con videos públicos; no se descargan ni se catalogan.</li>
+<li>Los archivos de video de sus propias publicaciones, mediante los enlaces temporales que trae esa misma exportación, solo para los videos que el titular elige conservar.</li>
+<li>La página pública de un video propio, cuando el titular decide recuperar ese video en particular. Para esto usa <b>yt-dlp</b>, una herramienta de código abierto que <b>no es una API oficial de TikTok</b>: lee los datos públicos del video y su archivo sin marca de agua, sin iniciar sesión ni usar cookies. No se usa para recorrer el perfil completo.</li>
+</ul>
+<p>La aplicación no publica ni modifica nada en TikTok y no accede a datos de otras cuentas.</p>
+
+<h2>3. Datos de Instagram</h2>
+<p>Para publicar, la aplicación usa la API oficial de Meta con el token de la cuenta de Instagram del titular. Solo publica los videos que el titular aprueba, como Trial Reels. Después lee el estado de la publicación, su enlace y sus estadísticas.</p>
+<p>Para que Instagram pueda tomar el archivo, la aplicación lo expone por un enlace temporal y aleatorio de Cloudflare (Quick Tunnel). Ese enlace sirve un único archivo y se cierra al terminar la publicación.</p>
+
+<h2>4. Dónde se guardan los datos</h2>
+<ul>
+<li>Toda la información (base de datos, videos, miniaturas y registros) se guarda <b>en la computadora del titular</b>. La aplicación no tiene servidores propios.</li>
+<li>Los tokens de TikTok e Instagram se guardan en un archivo local de configuración, con permisos de lectura solo para el usuario del equipo. El token de acceso de TikTok se usa en memoria durante cada operación; se guarda únicamente el token de renovación.</li>
+<li>Los registros de actividad de la aplicación ocultan los tokens y las direcciones firmadas.</li>
+</ul>
+
+<h2>5. Con quién se comparten</h2>
+<ul>
+<li><b>TikTok</b> y <b>Meta (Instagram)</b>: los intercambios necesarios con sus API oficiales y, en el caso de TikTok, la lectura de las páginas públicas de videos propios descripta arriba.</li>
+<li><b>Cloudflare</b>: transporta el archivo de video hacia Meta durante una publicación.</li>
+<li>No se venden ni se ceden datos a nadie más. No hay publicidad, cookies, analítica ni seguimiento.</li>
+</ul>
+
+<h2>6. Este sitio web</h2>
+<p>Estas páginas son estáticas y se alojan en GitHub Pages. No usan cookies ni scripts. GitHub puede registrar datos técnicos de las visitas, como la dirección IP, según su propia declaración de privacidad.</p>
+
+<h2>7. Cómo revocar la autorización y borrar los datos</h2>
+<ul>
+<li><b>En TikTok:</b> el titular puede quitar el acceso de la aplicación desde la sección de permisos de aplicaciones de la configuración de su cuenta de TikTok. Desde ese momento la aplicación ya no puede leer su lista de videos.</li>
+<li><b>En la aplicación:</b> borrar el token de renovación del archivo de configuración local desconecta la cuenta.</li>
+<li><b>Datos locales:</b> como todo se guarda en la computadora del titular, se eliminan borrando la carpeta de datos de la aplicación.</li>
+<li><b>En Instagram:</b> el acceso se revoca desde la configuración de integraciones de Meta.</li>
+</ul>
+
+<h2>8. Menores</h2>
+<p>La aplicación no está dirigida a menores y no recopila datos de otras personas.</p>
+
+<h2>9. Cambios</h2>
+<p>Si cambia el funcionamiento de la aplicación, esta política se actualizará en esta misma página, con su nueva fecha de vigencia.</p>
+
+<h2>10. Contacto</h2>
+<p>Las consultas sobre esta política se reciben en la <a href="https://github.com/alereta1/ig-trial-reels-pages/issues">sección Issues del repositorio público de estas páginas</a>. Ese canal es público: no incluyas datos personales en tu mensaje.</p>
+
+<div class=box>
+<h3 style="margin-top:0">English summary</h3>
+<p>IG Trial Reels Manager is a personal desktop tool used only by its owner (TikTok @aleretaa, Instagram @alejoretamar_). With the owner's authorization on TikTok's consent screen, it uses the Display API scopes <code>user.info.basic</code> (account identifier and display name, shown but not stored) and <code>video.list</code> (the owner's own public videos: ID, posting date, title, description, link, duration, size, view and like counts, temporary cover URL) to organize the owner's video library. It also reads the owner's official TikTok data export (only public videos are catalogued; for photos and private posts only their date is kept, to tell them apart), may download the files of videos the owner chooses through that export's temporary links, and, for an individual own public video, may use the open-source tool yt-dlp (not an official TikTok API; no login, no cookies, not used to crawl the profile). It never posts to TikTok and never accesses other users' data.</p>
+<p>All data is stored locally on the owner's computer; there are no servers. Tokens are stored in a local configuration file readable only by the computer's user, and activity logs hide tokens and signed URLs. Data is exchanged only with TikTok and Meta through their official APIs, and with Cloudflare, which carries the video file to Meta during a publication through a temporary random link that is closed afterwards. No data is sold or shared; no ads, cookies, analytics or tracking. Access can be revoked at any time in TikTok's app-permission settings, by deleting the local refresh token, or by deleting the app's local data folder. Contact: <a href="https://github.com/alereta1/ig-trial-reels-pages/issues">Issues section of this site's public repository</a> (public channel: please do not include personal data).</p>
+</div>
+
+<footer class=mut><nav><a href="./">Inicio</a><a href="terms.html">Términos de uso / Terms of Use</a></nav></footer>
+</main>
+</body>
+</html>
